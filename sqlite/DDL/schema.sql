@@ -13,7 +13,7 @@ CREATE TABLE movies (
 ) STRICT;
 
 
-INSERT INTO movies 
+INSERT INTO movies
 	(title, rating, released, overview, for_kids)
 VALUES 			
 	('The Lord of Thed Rings', 4.22, 100, 'Rings and hobiitsRinddddddgiits', 0),
