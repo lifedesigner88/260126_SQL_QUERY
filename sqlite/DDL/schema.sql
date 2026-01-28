@@ -12,11 +12,4 @@ CREATE TABLE movies (
 	-- poster BLOB
 ) STRICT;
 
-
-INSERT INTO movies
-	(title, rating, released, overview, for_kids)
-VALUES 			
-	('The Lord of Thed Rings', 4.22, 100, 'Rings and hobiitsRinddddddgiits', 0),
-	('Dune: Part One', 8, 100, 'Sand', 1);
-
 SELECT * FROM movies;
