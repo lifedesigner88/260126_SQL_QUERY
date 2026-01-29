@@ -12,3 +12,17 @@ HAVING
 	COUNT(*) > 5
 ORDER BY
 	avg_Rating DESC;
+
+--
+
+SELECT
+	genres,
+	COUNT(*) as Totals
+FROM
+	movies
+WHERE
+	genres IS NOT NULL
+GROUP BY 
+	genres
+ORDER BY 
+	Totals DESC;
