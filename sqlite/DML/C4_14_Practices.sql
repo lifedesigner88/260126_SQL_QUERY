@@ -26,3 +26,16 @@ GROUP BY
 	genres
 ORDER BY 
 	Totals DESC;
+
+
+--
+
+SELECT
+	ROUND(rating, 1), 
+	count(*) AS c
+FROM
+	movies
+WHERE
+	rating > 6
+GROUP BY ROUND(rating, 1)
+ORDER BY c DESC;
