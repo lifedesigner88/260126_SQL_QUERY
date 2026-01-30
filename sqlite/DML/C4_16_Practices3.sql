@@ -90,4 +90,4 @@ WHERE
 	budget IS NOT NULL
 	AND revenue IS NOT NULL
 GROUP BY
-	is_flop
+	is_flop;
