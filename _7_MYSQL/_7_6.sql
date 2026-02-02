@@ -33,3 +33,34 @@ CREATE TABLE users (
   CONSTRAINT chk_age CHECK (age < 100),
   CONSTRAINT uq_email UNIQUE (email)
 );
+
+--
+
+INSERT INTO
+  users (
+    username,
+    email,
+    gender,
+    interests,
+    bio,
+    age,
+    is_admin,
+    birth_date,
+    bed_time,
+    graduation_year
+  )
+VALUES
+  (
+    'mrpizza',
+    'mrpizza@hello.com',
+    'Male',
+    'Travel,Food,Technology',
+    'I like golf and coding',
+    31,
+    TRUE,
+    '1992-04-27',
+    '23:00',
+    '2014'
+  );
+  
+ SELECT * FROM users
